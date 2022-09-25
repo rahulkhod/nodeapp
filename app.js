@@ -11,6 +11,7 @@ app.get('/',(req,res)=>{
             <h2>Welcome to AWS DevOps</h2>
             <hr>
             <P>This is testing website for AWS DevOps Pipeline.</P>
+            <p>DevOps is awsome!</p>
         </div>
         
     </body>
