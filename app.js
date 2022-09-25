@@ -1,7 +1,5 @@
 const express= require('express');
 const app=new express();
-const PORT=3000;
-
 app.get('/',(req,res)=>{
     res.send(`<!DOCTYPE html>
     <html lang="en">
@@ -18,7 +16,4 @@ app.get('/',(req,res)=>{
     </body>
     </html>`)
 })
-
-app.listen(PORT,(err)=>{
-    console.log(`Server is listening on ${PORT}`);
-})
+app.listen(process.env.PORT||5000);
